@@ -8,6 +8,14 @@
       {
         "title": "Images and Containers",
         "text": "ImgAndCntrs.md"
+      },
+      {
+        "title": "Management",
+        "text": "management.md"
+      },
+      {
+        "title": "Running Containers",
+        "text": "runup.md"
       }
     ],
     "intro": {
