@@ -10,12 +10,12 @@
         "text": "ImgAndCntrs.md"
       },
       {
-        "title": "Management",
-        "text": "management.md"
+        "title": "Creating a Container",
+        "text": "runup.md"
       },
       {
-        "title": "Running Containers",
-        "text": "runup.md"
+        "title": "Manageing Containers",
+        "text": "management.md"
       }
     ],
     "intro": {

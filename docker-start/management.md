@@ -1,6 +1,4 @@
-# Working with Containers #
-
-## Managing Docker Containers ##
+### Docker Start ###
 
 Use the docker ***start*** command to run the container back up again `docker start rabbit1`{{execute}}.
 
@@ -11,10 +9,18 @@ We can issue an API command on port 80 to rabbitmq.
 
 `curl -i -u guest:guest -H "content-type:application/json" -XPUT http://localhost/api/vhosts/dev1`{{execute}}
 
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
-
-If we need to connect back to the running container we could use the command `docker attach rabbitmq`. We would then monitor the event log or stop the container with `ctrl+c` but there are better ways to do this.
+## Monitoring Logs ##
 
 If we just need to view the containers output run the command `docker logs rabbit1`{{execute}}. To keep **following** the output without returning to the command prompt use the 'logs' ***-f*** suffix `docker logs -f rabbit1`{{execute}}. `Ctrl+c` will return to the command prompt without stopping the container.
 
+## Stopping a running container ##
 
+To stop an already running container use:
+
+`docker stop rabbit1`{{execute}}
+
+## Docker Attach ##
+
+If we need to connect back to the running container we could use the command `docker attach rabbitmq`. We would then monitor the event log or stop the container with `ctrl+c` but i prefere to use the above commands.
